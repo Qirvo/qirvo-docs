@@ -9,25 +9,36 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "next-dev": "next dev --turbopack",
+    "next-build": "next build --turbopack",
+    "next-start": "next start",
+    "lint": "eslint"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
+    "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^4.8.0",
-    "react": "^19.1",
-    "react-dom": "^19.1",
+    "next": "15.5.2",
+    "next-sanity": "^10.1.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-icons": "^3.11.0",
     "sanity": "^4.8.0",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.1",
-    "eslint": "^9.28",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
     "prettier": "^3.5",
-    "typescript": "^5.8"
+    "typescript": "^5"
   },
   "prettier": {
     "semi": false,

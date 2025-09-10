@@ -1,9 +1,10 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { visionTool } from '@sanity/vision'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { schemaTypes } from './schemaTypes'
 
 export default defineConfig({
+  basePath: '/studio',
   name: 'default',
   title: 'Qirvo Docs',
 
@@ -11,8 +12,8 @@ export default defineConfig({
   dataset: 'qirvo-docs',
 
   plugins: [
-    structureTool(),
     visionTool(),
+    structureTool(),
   ],
 
   schema: {
