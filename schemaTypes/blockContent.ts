@@ -63,5 +63,17 @@ export default defineType({
       type: 'image',
       options: {hotspot: true},
     }),
+    defineArrayMember({
+      type: 'callout',
+    }),
+    defineArrayMember({
+      name: 'codeBlock',
+      title: 'Code Block',
+      type: 'object',
+      fields: [
+        { name: 'language', title: 'Language', type: 'string' },
+        { name: 'code', title: 'Code', type: 'text' },
+      ],
+    }),
   ],
 })

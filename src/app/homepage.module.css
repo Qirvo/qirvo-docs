@@ -1,0 +1,34 @@
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.description {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--mantine-shadow-xl);
+}
+
+.cardTitle {
+  font-weight: 800;
+}
+
+.iconWrapper {
+  color: var(--mantine-color-blue-6);
+}
