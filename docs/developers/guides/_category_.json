@@ -1,0 +1,8 @@
+{
+  "label": "Guides",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "In-depth guides and best practices for developing, configuring, and deploying plugins on the Qirvo platform."
+  }
+}

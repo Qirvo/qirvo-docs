@@ -1,9 +1,0 @@
-.navLink {
-  border-radius: var(--mantine-radius-md);
-}
-
-.navLink[data-active] {
-  background-color: var(--mantine-color-blue-light);
-  color: var(--mantine-color-blue-filled);
-  font-weight: 600;
-}

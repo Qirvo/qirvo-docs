@@ -1,0 +1,8 @@
+{
+  "label": "Developer - Basics",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "The comprehensive SDK for developing plugins for the Qirvo platform with full marketplace integration. Build powerful extensions that integrate seamlessly with Qirvo's dashboard, CLI, automation system, and plugin marketplace."
+  }
+}
