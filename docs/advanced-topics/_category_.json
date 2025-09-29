@@ -1,0 +1,8 @@
+{
+  "label": "Advanced Topics",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Advanced topics for developers building on the Qirvo platform, including in-depth guides on the Notification API, Event System, Logger API, and Configuration API."
+  }
+}

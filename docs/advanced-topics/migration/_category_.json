@@ -1,0 +1,8 @@
+{
+  "label": "Migration Guide",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive guide to migrating plugins to the latest Qirvo SDK version, covering breaking changes, new features, and best practices for a smooth transition."
+  }
+}

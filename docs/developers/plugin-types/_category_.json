@@ -1,0 +1,8 @@
+{
+    "label": "Plugin Types",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "A comprehensive overview of the various plugin types available in the Qirvo ecosystem, including UI Plugins, Automation Plugins, and Data Source Plugins. Learn how to choose the right type for your needs and how to implement them effectively."
+    }
+}
