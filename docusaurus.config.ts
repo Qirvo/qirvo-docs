@@ -31,10 +31,10 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'za', 'af', 'ru' /* Add more locales here */],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'za', 'af', 'ru' /* Add more locales here */],
+  // },
 
   presets: [
     [
@@ -69,12 +69,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/qirvo-social-card.jpg',
     navbar: {
       title: 'Qirvo',
       logo: {
         alt: 'Qirvo Logo',
-        src: 'img/Qirvo.png',
+        src: 'img/logo.png',
       },
       items: [
         {

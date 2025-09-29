@@ -825,4 +825,4 @@ QIRVO_WS_URL=wss://app.qirvo.ai
 
 This comprehensive development environment setup provides everything needed for efficient Qirvo plugin development, from IDE configuration to testing and deployment workflows.
 
-**Next**: [Configuration Fields](../configuration/configuration-fields.md) for plugin configuration documentation.
+**Next**: [Configuration Fields](../../docs/developers/configuration/configuration-fields) for plugin configuration documentation.

@@ -19,12 +19,11 @@ Your Dashboard by default will have all modules active, including:
 - [Daily Planner](/docs/user-guide/daily-planner)
 - [Tasks & Goals](/docs/user-guide/task-goals)
 - [Health Tracker](/docs/user-guide/health-tracker)
-- [Bullet Journal](/docs/user-guide/bullet-journal)
+- [Bullet Journal](/docs/user-guide/journal)
 - [Projects](/docs/user-guide/projects)
 - [Echo CLI](/docs/user-guide/echo-cli)
 - [AI Insights](/docs/user-guide/ai-insights)
 - [Reminders](/docs/user-guide/reminders)
-- [Subscriptions](/docs/user-guide/subscriptions)
 - [Settings](/docs/user-guide/settings)
 - [Profile](/docs/user-guide/profile)
 

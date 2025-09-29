@@ -823,4 +823,4 @@ describe('Widget Integration', () => {
 
 ---
 
-**Next**: [CLI Plugins](./cli-plugins.md) for command-line tool development.
+**Next**: [CLI Plugins](./cli-plugins) for command-line tool development.

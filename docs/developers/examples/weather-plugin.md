@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 
@@ -61,7 +61,7 @@ Create `tsconfig.json`:
 
 ### 3. Project Structure
 
-```
+```markdown
 qirvo-weather-widget/
 ├── package.json
 ├── tsconfig.json

@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Get started with Qirvo in - 5min ⏱️
+            Get started with Qirvo quickly
           </Link>
         </div>
       </div>

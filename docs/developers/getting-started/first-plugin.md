@@ -1012,10 +1012,9 @@ node dist/index.js
 
 ### Learn More
 
-- **Next Tutorial**: [CLI Tool Tutorial](../examples/cli-tool.md)
-- **Advanced Features**: [Background Services](../plugin-types/background-services.md)
-- **API Reference**: [Core APIs](../api-reference/core-apis.md)
-- **Publishing**: [Publishing Guide](../deployment/publishing.md)
+- **Advanced Features**: [Background Services](../plugin-types/background-services)
+- **API Reference**: [Core APIs](../api-reference/core-apis)
+- **Publishing**: [Publishing Guide](../deployment/publishing)
 
 ### Common Issues
 

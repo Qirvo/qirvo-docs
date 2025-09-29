@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Publishing to Qirvo Marketplace
 
 This guide covers the complete process of publishing your plugin to the Qirvo marketplace, from preparation to post-publication maintenance.
@@ -16,6 +20,7 @@ This guide covers the complete process of publishing your plugin to the Qirvo ma
 ## Pre-Publication Checklist
 
 ### Code Quality
+
 - [ ] **TypeScript Compilation**: No TypeScript errors
 - [ ] **Linting**: Passes ESLint with project configuration
 - [ ] **Testing**: All tests pass with >90% coverage
@@ -23,6 +28,7 @@ This guide covers the complete process of publishing your plugin to the Qirvo ma
 - [ ] **Performance**: Plugin loads and runs efficiently
 
 ### Documentation
+
 - [ ] **README**: Comprehensive installation and usage instructions
 - [ ] **Changelog**: Detailed version history
 - [ ] **API Documentation**: If plugin exposes APIs
@@ -30,6 +36,7 @@ This guide covers the complete process of publishing your plugin to the Qirvo ma
 - [ ] **License**: Clear license file (MIT, Apache, GPL, etc.)
 
 ### Manifest Validation
+
 - [ ] **Required Fields**: All required manifest fields present
 - [ ] **Permissions**: Only necessary permissions requested
 - [ ] **External Services**: All external APIs documented
@@ -37,6 +44,7 @@ This guide covers the complete process of publishing your plugin to the Qirvo ma
 - [ ] **Version**: Follows semantic versioning
 
 ### Testing
+
 - [ ] **Local Testing**: Plugin works in development environment
 - [ ] **Production Build**: Built version functions correctly
 - [ ] **Cross-Platform**: Tested on different operating systems
@@ -50,6 +58,7 @@ This guide covers the complete process of publishing your plugin to the Qirvo ma
 The easiest way to publish plugins is through the Qirvo dashboard:
 
 #### Step 1: Build Your Plugin
+
 ```bash
 # Clean previous builds
 npm run clean
@@ -62,6 +71,7 @@ npm pack
 ```
 
 #### Step 2: Upload via Dashboard
+
 1. Open [Qirvo Dashboard](https://app.qirvo.ai)
 2. Navigate to **Plugins** → **Installed Plugins**
 3. Click **"Upload Plugin"**
@@ -70,6 +80,7 @@ npm pack
 6. Submit for review
 
 #### Step 3: Configure Marketplace Listing
+
 ```json
 {
   "marketplace": {
@@ -153,6 +164,7 @@ async function publishPlugin() {
 When uploading through the dashboard, you'll need to provide:
 
 #### Basic Information
+
 - **Plugin Title**: Marketplace display name
 - **Short Description**: One-line summary (max 100 characters)
 - **Long Description**: Detailed description (max 2000 characters)
@@ -160,18 +172,21 @@ When uploading through the dashboard, you'll need to provide:
 - **Tags**: Searchable keywords (max 10)
 
 #### Media Assets
+
 - **Icon**: 512x512px PNG with transparent background
 - **Screenshots**: 1280x720px PNG showing key features (max 5)
 - **Demo Video**: Optional MP4 demonstrating functionality
 - **Banner**: 1920x480px promotional image
 
 #### Technical Details
+
 - **Supported Platforms**: Web, CLI, Mobile
 - **Minimum Qirvo Version**: Required platform version
 - **Dependencies**: External service requirements
 - **Permissions**: Detailed permission explanations
 
 #### Support Information
+
 - **Support Email**: Contact for user support
 - **Documentation URL**: Link to comprehensive docs
 - **Source Code**: GitHub repository (optional but recommended)
@@ -180,6 +195,7 @@ When uploading through the dashboard, you'll need to provide:
 ### Pricing Configuration
 
 #### Free Plugins
+
 ```json
 {
   "pricing": {
@@ -190,6 +206,7 @@ When uploading through the dashboard, you'll need to provide:
 ```
 
 #### Paid Plugins
+
 ```json
 {
   "pricing": {
@@ -205,6 +222,7 @@ When uploading through the dashboard, you'll need to provide:
 ```
 
 #### Subscription Plugins
+
 ```json
 {
   "pricing": {
@@ -285,6 +303,7 @@ Upon approval, you'll receive:
 ### Post-Approval Setup
 
 #### Configure Analytics
+
 ```typescript
 // Add analytics tracking to your plugin
 import { QirvoAnalytics } from '@qirvo/plugin-sdk';
@@ -309,6 +328,7 @@ export default class MyPlugin extends BasePlugin {
 ```
 
 #### Set Up Support Channels
+
 1. **Support Email**: Monitor and respond to user inquiries
 2. **Documentation**: Keep docs updated with latest features
 3. **Issue Tracker**: Triage and fix reported bugs
@@ -319,7 +339,9 @@ export default class MyPlugin extends BasePlugin {
 ### Monitoring
 
 #### Analytics Dashboard
+
 Track key metrics:
+
 - **Downloads**: Total and daily download counts
 - **Active Users**: Daily/monthly active users
 - **Ratings**: User ratings and reviews
@@ -327,7 +349,9 @@ Track key metrics:
 - **Performance**: Load times and error rates
 
 #### User Feedback
+
 Monitor and respond to:
+
 - **Reviews**: Marketplace ratings and comments
 - **Support Requests**: Email and ticket system
 - **Bug Reports**: GitHub issues or support system
@@ -336,12 +360,14 @@ Monitor and respond to:
 ### Marketing
 
 #### Launch Strategy
+
 1. **Announcement**: Blog post or social media
 2. **Documentation**: Comprehensive guides and tutorials
 3. **Community**: Share in relevant forums and groups
 4. **Partnerships**: Collaborate with other developers
 
 #### Ongoing Promotion
+
 1. **Content Marketing**: Tutorials, use cases, tips
 2. **Social Media**: Regular updates and engagement
 3. **User Testimonials**: Showcase success stories
@@ -352,6 +378,7 @@ Monitor and respond to:
 ### Version Management
 
 Follow semantic versioning (semver):
+
 - **Major (1.0.0 → 2.0.0)**: Breaking changes
 - **Minor (1.0.0 → 1.1.0)**: New features, backward compatible
 - **Patch (1.0.0 → 1.0.1)**: Bug fixes, backward compatible
@@ -359,6 +386,7 @@ Follow semantic versioning (semver):
 ### Update Process
 
 #### 1. Prepare Update
+
 ```bash
 # Update version in package.json and manifest.json
 npm version patch  # or minor/major
@@ -374,6 +402,7 @@ npm test
 ```
 
 #### 2. Submit Update
+
 ```bash
 # Create new package
 npm pack
@@ -383,6 +412,7 @@ qirvo plugin update ./my-plugin-1.0.1.tgz
 ```
 
 #### 3. Update Documentation
+
 - Update README with new features
 - Refresh screenshots if UI changed
 - Update API documentation
@@ -425,6 +455,7 @@ export default class MyPlugin extends BasePlugin {
 ### Pricing Strategies
 
 #### Free with Premium Features
+
 ```json
 {
   "pricing": {
@@ -446,6 +477,7 @@ export default class MyPlugin extends BasePlugin {
 ```
 
 #### Subscription Model
+
 ```json
 {
   "pricing": {
@@ -511,6 +543,7 @@ export default class PaidPlugin extends BasePlugin {
 ## Best Practices
 
 ### Development
+
 1. **Version Control**: Use Git with semantic commits
 2. **Testing**: Comprehensive test coverage
 3. **Documentation**: Keep docs updated with code
@@ -518,6 +551,7 @@ export default class PaidPlugin extends BasePlugin {
 5. **Performance**: Monitor and optimize resource usage
 
 ### Marketing
+
 1. **Clear Value Proposition**: Explain benefits clearly
 2. **Quality Screenshots**: Show plugin in action
 3. **User Testimonials**: Social proof builds trust
@@ -525,6 +559,7 @@ export default class PaidPlugin extends BasePlugin {
 5. **Community Engagement**: Be active in forums
 
 ### Support
+
 1. **Responsive Support**: Reply to inquiries quickly
 2. **Comprehensive FAQ**: Address common questions
 3. **Video Tutorials**: Visual learning aids
@@ -533,4 +568,4 @@ export default class PaidPlugin extends BasePlugin {
 
 ---
 
-**Next**: [Version Management](./versioning.md) for detailed versioning strategies.
+**Next**: [Version Management](./versioning) for detailed versioning strategies.

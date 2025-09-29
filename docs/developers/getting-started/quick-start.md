@@ -31,7 +31,7 @@ Get up and running with Qirvo plugin development in just a few minutes! This gui
 ### Getting Help
 
 - **Documentation**: Browse the full [documentation](../intro)
-- **Examples**: Check out [example plugins](../examples/weather-plugin)
+- **Examples**: Check out [example plugins](../examples/intro)
 - **Support**: Email [support@qirvo.ai](mailto:support@qirvo.ai)
 - **Community**: [GutHub Discussions](https://github.com/orgs/Qirvo/discussions)
 
